@@ -649,4 +649,10 @@ public class Pinview extends LinearLayout implements TextWatcher, View.OnFocusCh
     public void setPinViewEventListener(PinViewEventListener listener) {
         this.mListener = listener;
     }
+
+    public void setImeOptions(int imeOption) {
+        for (EditText editText : editTextList) {
+            editText.setImeOptions(imeOption);
+        }
+    }
 }
